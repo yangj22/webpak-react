@@ -1,0 +1,12 @@
+### webpack 需要下载的 babel
+
+    //dependencies下的依赖
+    npm install @babel/polyfill --save  //转义es6的API
+    npm install @babel/runtime --save  //babel变换运行时插件的依赖
+    devDependencies下的依赖
+    npm install @babel/core --save-dev  //babel核心部分，把ES6转化成ES5
+    npm install @babel/plugin-transform-runtime --save-dev  //外部引用辅助函数和内置函数，自动填充代码而不会污染全局变量。
+    npm install @babel/preset-env --save-dev  //提供环境的映射获得插件列表并传递给babel
+    npm install @babel/preset-react --save-dev  //解析JSX
+    npm install babel-loader --save-dev  //webpack需要用到这个loader
+    
